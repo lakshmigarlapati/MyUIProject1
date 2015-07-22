@@ -1,0 +1,29 @@
+<!DOCTYPE <!DOCTYPE html>
+<html ng-app="store">
+<head>
+	<title>Angular</title>
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+</head>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+	<div ng-controller="StoreController as s">
+		<h1> {{s.product.name}} </h1>
+		<h2> {{s.product.price | currency}}</h2>
+		<p> {{s.product.description}}</p>
+	</div>
+
+</body>
+</html>
